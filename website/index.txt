@@ -1,0 +1,59 @@
+h1. Ruby Dialog Interface
+
+h1. &#x2192; 'rdialog'
+
+
+h2. What
+
+Interface with the command-line curses interface dialog, and rapidly develop
+simple dialog-driven TUI applications
+
+h2. Installing
+
+#Install dialog on your machine.
+#<pre syntax="ruby">sudo gem install rdialog</pre>
+
+h2. The basics
+
+After installation is complete, require the gem in your source code, and away you go!
+
+RDialog handles the interface between ruby scripts and dialog's command-line interface. RDialog accepts input as arrays and/or strings, and returns similar objects.
+
+Once you have initialized an instance of RDialog via <pre syntax="ruby">RDialog.new</pre> , options can be set that will persist throughout the lifetime of the instace. For example:
+
+<pre syntax="ruby">
+dialog = RDialog.new
+dialog.shadow = false
+</pre>
+
+This will prevent dialog from drawing shadows around all further boxes.
+
+h2. Demonstration of usage
+
+<pre syntax="ruby">
+require "rdialog"
+
+items = Array.new
+items.push(["softcheese.net", "a cool server", false])
+items.push(["filter.eu.org", "an even cooler server!", false])
+items.push(["oink.me.uk", "quite cool as well", true])
+
+dialog = RDialog.new
+
+dialog.nocancel = true
+selected_item = dialog.radiolist("ssh to:", items)
+
+exec("ssh sweeper@" + selected_item)
+</pre>
+
+h2. Forum
+
+"http://groups.google.com/group/rdialog":http://groups.google.com/group/rdialog
+
+h2. Licence
+
+This code is free to use under the terms of the MIT licence. 
+
+h2. Contact
+
+Comments are welcome. Send an email to "Aleks Clark":mailto:aleks.clark@gmail.com.
