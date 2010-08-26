@@ -10,5 +10,5 @@ Package: ruby-dialog
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, dialog
 Description: Handles the interface between ruby scripts and dialog
- Handles the interface between ruby scripts and dialog’s command-line
+ Handles the interface between ruby scripts and dialog's command-line
  interface.
