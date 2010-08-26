@@ -1,0 +1,14 @@
+Source: ruby-dialog
+Section: ruby
+Priority: extra
+Maintainer: SimpleGeo Nerds <nerds@simplegeo.com>
+Build-Depends: cdbs, debhelper (>= 7), ruby-pkg-tools
+Standards-Version: 3.8.4
+Homepage: http://rdialog.rubyforge.org/
+
+Package: ruby-dialog
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, dialog
+Description: Handles the interface between ruby scripts and dialog
+ Handles the interface between ruby scripts and dialog’s command-line
+ interface.
