@@ -1,3 +1,9 @@
+ruby-dialog (0.5.0-sg1) lucid; urgency=low
+
+  * UNRELEASED
+
+ -- SimpleGeo Nerds <nerds@simplegeo.com>  Fri, 27 Aug 2010 00:15:34 +0000
+
 ruby-dialog (0.5.0-sg0) unstable; urgency=low
 
   * Initial release
