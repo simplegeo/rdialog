@@ -1,3 +1,12 @@
+ruby-dialog (0.5.0-sg2) lucid; urgency=low
+
+  [ Paul Lathrop ]
+  * remove unicode character
+
+  [ SimpleGeo Nerds ]
+
+ -- SimpleGeo Nerds <nerds@simplegeo.com>  Fri, 27 Aug 2010 01:03:25 +0000
+
 ruby-dialog (0.5.0-sg0) unstable; urgency=low
 
   * Initial release
