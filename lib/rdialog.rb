@@ -510,11 +510,14 @@ class RDialog
         #      box has a Yes button and a No button, in  which  the  user  can
         #      switch between by pressing the TAB key.
 
-	def yesno(text="Please enter some text", height=0, width=0)
-		command = option_string() + "--inputbox \"" + text.to_s +
+	def yesno(text="Please enter some text", height=0, width=0, value=true)
+		x = self.nocancel
+		self.nocancel = false
+		command = option_string() + (value ? "--yesno" : "--defaultno --yesno") + " \"" + text.to_s +
                 "\" " + height.to_i.to_s + " " + width.to_i.to_s
 
 		success = system(command)
+		self.nocancel = x
 		return success
 	end
 
