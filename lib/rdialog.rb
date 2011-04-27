@@ -1,4 +1,3 @@
-
 #                                vim:ts=4:sw=4:
 # = rdialog - A dialog gem for Ruby
 #
@@ -168,7 +167,7 @@ class RDialog
 		puts command
 		success = system(command)
 		puts success
-		if success
+		if success && tmp.size > 0
 			selected_string = tmp.readline
 			tmp.close!
 			selected_string.slice!(0)
